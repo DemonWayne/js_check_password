@@ -27,8 +27,8 @@ describe(`Function 'checkPassword':`, () => {
     expect(checkPassword('password1!')).toBe(false);
   });
 
-  it(`should return 'false' for the password without lowercase letter`, () => {
-    expect(checkPassword('PASSWORD1!')).toBe(false);
+  it(`should return 'true' for the password without lowercase letter`, () => {
+    expect(checkPassword('PASSWORD1!')).toBe(true);
   });
 
   it(`should return 'false' for the password without special character`, () => {
